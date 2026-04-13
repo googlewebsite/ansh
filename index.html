@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website @999 - Get Your Professional Website in Just &#8377;999</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .hover-scale {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hover-scale:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-10px);
+            }
+
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        .price-tag {
+            background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/918866204293?text=Hello%20I%20want%20to%20order%20a%20website%20for%20999"
+            target="_blank"
+            class="bg-green-500 text-white rounded-full p-4 shadow-lg hover:bg-green-600 transition-colors">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-globe text-purple-600 text-2xl"></i>
+                    <span class="text-xl font-bold text-gray-800">Website @999</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#features" class="text-gray-600 hover:text-purple-600 transition">Features</a>
+                    <a href="#samples" class="text-gray-600 hover:text-purple-600 transition">Samples</a>
+                    <a href="#pricing" class="text-gray-600 hover:text-purple-600 transition">Pricing</a>
+                    <a href="https://wa.me/918866204293?text=Hello%20I%20want%20to%20order%20a%20website%20for%20999"
+                        target="_blank"
+                        class="bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition flex items-center space-x-2">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>Order Now</span>
+                    </a>
+                </div>
+                <button class="md:hidden text-gray-600" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden fixed inset-0 bg-white z-40 pt-20">
+        <div class="flex flex-col items-center space-y-6 p-6">
+            <a href="#features" class="text-gray-600 hover:text-purple-600" onclick="toggleMobileMenu()">Features</a>
+            <a href="#samples" class="text-gray-600 hover:text-purple-600" onclick="toggleMobileMenu()">Samples</a>
+            <a href="#pricing" class="text-gray-600 hover:text-purple-600" onclick="toggleMobileMenu()">Pricing</a>
+            <a href="https://wa.me/918866204293?text=Hello%20I%20want%20to%20order%20a%20website%20for%20999"
+                target="_blank" class="bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600 transition">
+                Order Now
+            </a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fade-in text-center">
+                    Get Your Professional Website in Just <span
+                        class="price-tag text-5xl md:text-7xl">&#8377;999!</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 opacity-90 text-center">
+                    Any type of website - Business, Shop, Portfolio, Salon, School, etc.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                    <a href="https://wa.me/918866204293?text=Hello%20I%20want%20to%20order%20a%20website%20for%20999"
+                        target="_blank"
+                        class="bg-green-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-600 transition pulse-animation flex items-center justify-center space-x-2">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                        <span>Order Now on WhatsApp</span>
+                    </a>
+                    <a href="#samples"
+                        class="bg-white text-purple-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition">
+                        View Samples
+                    </a>
+                </div>
+                <div class="bg-red-500 text-white px-4 py-2 rounded-full inline-block mb-8">
+                    <i class="fas fa-clock mr-2"></i>
+                    <span class="font-semibold">Limited Time Offer - Save 70%!</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
+                Why Choose Website @999?
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="text-center hover-scale">
+                    <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-rocket text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Fast Delivery</h3>
+                    <p class="text-gray-600">Get your website ready in 24-48 hours</p>
+                </div>
+                <div class="text-center hover-scale">
+                    <div class="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-mobile-alt text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Mobile Friendly</h3>
+                    <p class="text-gray-600">Perfect design on all devices</p>
+                </div>
+                <div class="text-center hover-scale">
+                    <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-server text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Free Hosting</h3>
+                    <p class="text-gray-600">Lifetime free hosting included</p>
+                </div>
+                <div class="text-center hover-scale">
+                    <div class="bg-yellow-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-search text-yellow-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">SEO Ready</h3>
+                    <p class="text-gray-600">Optimized for Google ranking</p>
+                </div>
+                <div class="text-center hover-scale">
+                    <div class="bg-red-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fab fa-whatsapp text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">WhatsApp Support</h3>
+                    <p class="text-gray-600">24/7 support via WhatsApp</p>
+                </div>
+                <div class="text-center hover-scale">
+                    <div class="bg-indigo-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-code text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Professional Design</h3>
+                    <p class="text-gray-600">Modern & clean website design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Website Types Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
+                Types of Websites We Create
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <i class="fas fa-briefcase text-purple-600 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Business Website</h3>
+                    <p class="text-gray-600 mb-4">Professional website for your business with services, about, and
+                        contact pages</p>
+                    <a href="https://wa.me/918866204293?text=Hello%20I%20want%20to%20order%20a%20Business%20Website%20for%20999"
+                        target="_blank" class="text-purple-600 font-semibold hover:text-purple-700">
+                        Order Now <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <i class="fas fa-shopping-cart text-green-600 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">E-commerce Website</h3>
+                    <p class="text-gray-600 mb-4">Online store with product catalog, cart, and payment integration</p>
+                    <a href="https://wa.me/918866204293?text=Hello%20I%20want%20to%20order%20an%20E-commerce%20Website"
+                        target="_blank" class="text-purple-600 font-semibold hover:text-purple-700">
+                        Order Now <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <i class="fas fa-cut text-pink-600 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Salon Website</h3>
+                    <p class="text-gray-600 mb-4">Beautiful website for salons with booking system and gallery</p>
+                    <a href="https://wa.me/918866204293?text=Hello%20I%20want%20to%20order%20a%20Salon%20Website%20for%20999"
+                        target="_blank" class="text-purple-600 font-semibold hover:text-purple-700">
+                        Order Now <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <i class="fas fa-user text-blue-600 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Personal Portfolio</h3>
+                    <p class="text-gray-600 mb-4">Showcase your work and skills with a stunning portfolio website</p>
+                    <a href="https://wa.me/918866204293?text=Hello%20I%20want%20to%20order%20a%20Portfolio%20Website%20for%20999"
+                        target="_blank" class="text-purple-600 font-semibold hover:text-purple-700">
+                        Order Now <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <i class="fas fa-utensils text-orange-600 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Restaurant Website</h3>
+                    <p class="text-gray-600 mb-4">Menu display, online ordering, and reservation system</p>
+                    <a href="https://wa.me/918866204293?text=Hello%20I%20want%20to%20order%20a%20Restaurant%20Website%20for%20999"
+                        target="_blank" class="text-purple-600 font-semibold hover:text-purple-700">
+                        Order Now <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <i class="fas fa-graduation-cap text-indigo-600 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">School/Coaching Website</h3>
+                    <p class="text-gray-600 mb-4">Educational website with courses, faculty, and admission info</p>
+                    <a href="https://wa.me/918866204293?text=Hello%20I%20want%20to%20order%20a%20School%20Website%20for%20999"
+                        target="_blank" class="text-purple-600 font-semibold hover:text-purple-700">
+                        Order Now <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Samples Section -->
+    <section id="samples" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
+                Website Samples
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="relative group">
+                    <div class="bg-gray-200 rounded-lg overflow-hidden h-64 flex items-center justify-center">
+                        <iframe src="https://googlewebsite.github.io/delovper/" class="w-full h-full border-0"
+                            loading="lazy"></iframe>
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition rounded-lg">
+                        <div class="text-center space-y-3">
+                            <a href="https://googlewebsite.github.io/delovper/" target="_blank"
+                                class="bg-white text-gray-800 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition block">
+                                <i class="fas fa-external-link-alt mr-2"></i>Visit Website
+                            </a>
+                            <a href="https://wa.me/918866204293?text=Hello%20I%20want%20a%20website%20like%20your%20Developer%20sample"
+                                target="_blank"
+                                class="bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition block">
+                                <i class="fab fa-whatsapp mr-2"></i>Order This Design
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="text-center mt-4 font-semibold">Developer Portfolio</h3>
+                    <p class="text-center text-gray-600 text-sm mt-1">Professional developer portfolio website</p>
+                </div>
+                <div class="relative group">
+                    <div class="bg-gray-200 rounded-lg overflow-hidden h-64 flex items-center justify-center">
+                        <iframe src="https://googlewebsite.github.io/Bhavin-Salon/" class="w-full h-full border-0"
+                            loading="lazy"></iframe>
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition rounded-lg">
+                        <div class="text-center space-y-3">
+                            <a href="https://googlewebsite.github.io/Bhavin-Salon/" target="_blank"
+                                class="bg-white text-gray-800 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition block">
+                                <i class="fas fa-external-link-alt mr-2"></i>Visit Website
+                            </a>
+                            <a href="https://wa.me/918866204293?text=Hello%20I%20want%20a%20website%20like%20your%20Salon%20sample"
+                                target="_blank"
+                                class="bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition block">
+                                <i class="fab fa-whatsapp mr-2"></i>Order This Design
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="text-center mt-4 font-semibold">Salon Website</h3>
+                    <p class="text-center text-gray-600 text-sm mt-1">Beautiful salon & beauty website</p>
+                </div>
+                <div class="relative group">
+                    <div class="bg-gray-200 rounded-lg overflow-hidden h-64 flex items-center justify-center">
+                        <iframe src="https://khushbuprasad8866-ux.github.io/Royal-Touch-Beauty/"
+                            class="w-full h-full border-0" loading="lazy"></iframe>
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition rounded-lg">
+                        <div class="text-center space-y-3">
+                            <a href="https://khushbuprasad8866-ux.github.io/Royal-Touch-Beauty/" target="_blank"
+                                class="bg-white text-gray-800 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition block">
+                                <i class="fas fa-external-link-alt mr-2"></i>Visit Website
+                            </a>
+                            <a href="https://wa.me/918866204293?text=Hello%20I%20want%20a%20website%20like%20your%20Beauty%20Parlor%20sample"
+                                target="_blank"
+                                class="bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition block">
+                                <i class="fab fa-whatsapp mr-2"></i>Order This Design
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="text-center mt-4 font-semibold">Beauty Parlor</h3>
+                    <p class="text-center text-gray-600 text-sm mt-1">Royal Touch Beauty website</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-800">
+                Choose Your Plan
+            </h2>
+            <p class="text-center text-gray-600 mb-12">Starting at just &#8377;999 - Upgrade for premium features</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Basic Plan -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold mb-2">Basic</h3>
+                        <div class="text-4xl font-bold text-purple-600">&#8377;999</div>
+                        <p class="text-gray-600">Perfect for small businesses</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>5 Pages Website</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Mobile Responsive</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Free Hosting</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Contact Form</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Basic SEO</span>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/918866204293?text=Hello%20I%20want%20to%20order%20the%20Basic%20plan%20for%20999"
+                        target="_blank"
+                        class="w-full bg-purple-600 text-white py-3 rounded-full font-semibold hover:bg-purple-700 transition block text-center">
+                        Order Now
+                    </a>
+                </div>
+
+                <!-- Premium Plan -->
+                <div
+                    class="bg-gradient-to-br from-purple-600 to-pink-600 text-white rounded-lg shadow-xl p-8 card-hover transform scale-105">
+                    <div
+                        class="bg-yellow-400 text-gray-800 text-sm font-semibold px-3 py-1 rounded-full inline-block mb-4">
+                        MOST POPULAR
+                    </div>
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold mb-2">Premium</h3>
+                        <div class="text-4xl font-bold">&#8377;3,999</div>
+                        <p>Best value for growing businesses</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-white mr-3"></i>
+                            <span>Everything in Basic</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-white mr-3"></i>
+                            <span>10 Pages Website</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-white mr-3"></i>
+                            <span>Premium Design</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-white mr-3"></i>
+                            <span>Image Gallery</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-white mr-3"></i>
+                            <span>Advanced SEO</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-white mr-3"></i>
+                            <span>Social Media Integration</span>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/918866204293?text=Hello%20I%20want%20to%20order%20the%20Premium%20plan%20for%203999"
+                        target="_blank"
+                        class="w-full bg-white text-purple-600 py-3 rounded-full font-semibold hover:bg-gray-100 transition block text-center">
+                        Order Now
+                    </a>
+                </div>
+
+                <!-- E-commerce Plan -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold mb-2">E-commerce</h3>
+                        <div class="text-4xl font-bold text-purple-600">&#8377;29,999</div>
+                        <p>Complete online store solution</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Everything in Premium</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Unlimited Pages</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Product Catalog</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Shopping Cart</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Payment Gateway</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Order Management</span>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/918866204293?text=Hello%20I%20want%20to%20order%20the%20E-commerce%20plan%20for%2029999"
+                        target="_blank"
+                        class="w-full bg-purple-600 text-white py-3 rounded-full font-semibold hover:bg-purple-700 transition block text-center">
+                        Order Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
+                How It Works
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-purple-600 font-bold text-xl">1</span>
+                    </div>
+                    <h3 class="font-semibold mb-2">Choose Plan</h3>
+                    <p class="text-gray-600 text-sm">Select the perfect plan for your needs</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-purple-600 font-bold text-xl">2</span>
+                    </div>
+                    <h3 class="font-semibold mb-2">Contact on WhatsApp</h3>
+                    <p class="text-gray-600 text-sm">Click the WhatsApp button to start</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-purple-600 font-bold text-xl">3</span>
+                    </div>
+                    <h3 class="font-semibold mb-2">Provide Details</h3>
+                    <p class="text-gray-600 text-sm">Share your requirements and content</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-purple-600 font-bold text-xl">4</span>
+                    </div>
+                    <h3 class="font-semibold mb-2">Get Website</h3>
+                    <p class="text-gray-600 text-sm">Receive your website in 24-48 hours</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
+                What Our Clients Say
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-purple-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Rahul Sharma</h4>
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Amazing service! Got my business website in just 2 days. The quality is
+                        outstanding for this price."</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-purple-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Priya Patel</h4>
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Perfect for my salon! The website looks professional and my customers love
+                        it. Great WhatsApp support!"</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-purple-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Amit Kumar</h4>
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Started with basic plan and upgraded to premium. Best decision ever! My
+                        online sales increased by 40%."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
+                Meet Our Team
+            </h2>
+            <div class="flex justify-center">
+                <div class="bg-white rounded-lg shadow-lg p-8 text-center max-w-sm hover-scale">
+                    <div class="mb-6">
+                        <img src="https://upload.meeshosupplyassets.com/cataloging/1776073170239/WhatsAppImage2026-04-13at15.08.31.jpeg"
+                            alt="Ansh"
+                            class="w-48 h-48 rounded-full mx-auto object-cover border-4 border-purple-200 shadow-lg">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 text-gray-800">Ansh</h3>
+                    <p class="text-purple-600 font-semibold mb-4">Website Developer & Designer</p>
+                    <p class="text-gray-600 mb-6">Passionate about creating stunning websites that help businesses grow
+                        online. Specialized in modern web design and development.</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="https://wa.me/918866204293?text=Hello%20Ansh,%20I%20want%20to%20order%20a%20website"
+                            target="_blank"
+                            class="bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition">
+                            <i class="fab fa-whatsapp mr-2"></i>Contact Ansh
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 gradient-bg text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                Ready to Get Your Professional Website?
+            </h2>
+            <p class="text-xl mb-8 opacity-90">
+                Join 500+ happy customers who got their dream website at an amazing price
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://wa.me/918866204293?text=Hello%20I%20want%20to%20order%20a%20website%20for%20999"
+                    target="_blank"
+                    class="bg-green-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-600 transition pulse-animation flex items-center justify-center space-x-2">
+                    <i class="fab fa-whatsapp text-xl"></i>
+                    <span>Order Now - Only &#8377;999</span>
+                </a>
+                <a href="tel:+918866204293"
+                    class="bg-white text-purple-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition">
+                    <i class="fas fa-phone mr-2"></i>
+                    Call Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-globe text-purple-400 text-xl"></i>
+                        <span class="text-lg font-bold">Website @999</span>
+                    </div>
+                    <p class="text-gray-400">Professional websites at affordable prices for everyone.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#features" class="hover:text-white transition">Features</a></li>
+                        <li><a href="#samples" class="hover:text-white transition">Samples</a></li>
+                        <li><a href="#pricing" class="hover:text-white transition">Pricing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Website Types</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Business Website</li>
+                        <li>E-commerce Store</li>
+                        <li>Portfolio Website</li>
+                        <li>Salon Website</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contact Us</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p><i class="fab fa-whatsapp mr-2"></i> WhatsApp: +91 88662 04293</p>
+                        <p><i class="fas fa-phone mr-2"></i> Phone: +91 88662 04293</p>
+                        <p><i class="fas fa-envelope mr-2"></i> Email: info@website999.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Website @999. All rights reserved. | Made with <i class="fas fa-heart text-red-500"></i>
+                    in India</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
+        });
+
+        // Add countdown timer for urgency
+        function startCountdown() {
+            const countdownElement = document.createElement('div');
+            countdownElement.className = 'fixed top-20 right-4 bg-red-500 text-white px-4 py-2 rounded-full text-sm font-semibold z-50';
+            countdownElement.innerHTML = '<i class="fas fa-clock mr-2"></i>Offer ends in: <span id="timer">23:59:59</span>';
+            document.body.appendChild(countdownElement);
+
+            let timeLeft = 86400; // 24 hours in seconds
+
+            setInterval(() => {
+                const hours = Math.floor(timeLeft / 3600);
+                const minutes = Math.floor((timeLeft % 3600) / 60);
+                const seconds = timeLeft % 60;
+
+                document.getElementById('timer').textContent =
+                    `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+
+                timeLeft--;
+                if (timeLeft < 0) timeLeft = 86400; // Reset after 24 hours
+            }, 1000);
+        }
+
+        // Start countdown when page loads
+        startCountdown();
+    </script>
+</body>
+
+</html>
